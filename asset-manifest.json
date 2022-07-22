@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/skilla/static/js/main.a4f2c4aa.js",
-    "index.html": "/skilla/index.html",
-    "main.a4f2c4aa.js.map": "/skilla/static/js/main.a4f2c4aa.js.map"
+    "main.js": "/Skilla/static/js/main.a4f2c4aa.js",
+    "index.html": "/Skilla/index.html",
+    "main.a4f2c4aa.js.map": "/Skilla/static/js/main.a4f2c4aa.js.map"
   },
   "entrypoints": [
     "static/js/main.a4f2c4aa.js"
