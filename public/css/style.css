@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  font-family: 'SF Pro Display', 'Segoe UI', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F1F4F9;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #122945;
+}
+
+.App
+{
+    display: flex;
+}
+
+.Sidebar
+{
+    align-items:stretch;
+    flex-basis: 240px;
+    min-height:100%;
+    height: auto;
+    background: url('../assets/sidebar.svg') #091336 no-repeat;
+    flex-shrink:0;
+}
+
+.main
+{
+    align-items:stretch;
+    height: auto;   
+    flex-direction: column;
+    flex-grow:1;
+}
+
+.Header
+{
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px #E9EDF3;
+}
+
+.header-content
+{
+    height: 64px;
+    padding:0 120px 0 120px;
+    flex-direction:row;
+    align-items:center;
+    display:flex;
+}
+
+.today-date-header
+{
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#899CB1;
+    height:22px;
+}
+
+.analytics-stub
+{
+     background: url('../assets/analytics.svg') no-repeat center;
+     flex-basis:594px;
+     flex-shrink:0;
+     height:34px;
+     flex-grow:1;
+     margin:0 20px 0 20px;
+}
+
+.profile-stub
+{
+    background: url('../assets/profile.svg') no-repeat;
+    width:486px;
+    height:48px;
+}
+              
+              
+.content
+{
+    padding:20px 120px 20px 120px;
+}
+
+.Subheader
+{
+    height: 64px;
+    justify-content: flex-end;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.balance-stub
+{
+    height: 40px;
+    min-width:145px;
+    background: url('../assets/balance.svg') no-repeat;
+    padding-right:20px;
+}
+
+.TimeSelect
+{
+    flex-direction: row;
+    height: 24px;
+    display:flex;
+    align-items:center;
+}
+
+.Filters
+{
+    height: 48px;
+    flex-direction: row;
+    justify-content: flex-end;
+    display:flex;
+    flex-grow:1;
+}
+
+.search-filters
+{
+    display:flex;
+    flex-direction: row;
+}
+
+.search-stub
+{
+    background: url('../assets/search.svg') no-repeat;
+    height:48px;
+    min-width:200px;
+    
+}
+
+.CallsGrid
+{
+    align-items:stretch;
+    height: auto; 
+    flex-grow:1;
+    border-radius:8px;
+    background:#FFFFFF;
+    box-shadow: 0px 4px 5px #E9EDF3;
+    padding:20px;
+    
+}
+
+.CallsGrid table
+{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th
+{
+    font-size: 14px;
+    color: #899CB1;
+    font-style: normal;
+    font-weight: 400;
+    height:16px;
+    padding:4px 0 20px 0;
+    text-align:left;
+}
+
+thead tr
+{
+    border:none;    
+}
+
+tr
+{
+    padding:10px;
+    border-top: 1px solid #EAF0FA;
+}
+
+td
+{
+    height:65px;
+}
+
+.pointer
+{
+    cursor: pointer;
+}
+
+.sortable
+{
+    cursor:ns-resize;
+}
+
+.align-left
+{
+    text-align:left;
+}
+
+.align-right
+{
+    text-align:right;
+}
+
+.out-call
+{
+    fill:#28A879;
+}
+
+.in-call
+{
+    fill:#005FF8;
+}
+
+.failed-call
+{
+    fill:#EA1A4F;
+}
+
+.partner-name
+{
+    color: #5E7793;
+}
+
+
+button
+{
+    cursor: pointer;
+    background:transparent;
+    border:none;
+}
+
+button.increase,button.increase:hover:disabled,button.increase:focus:disabled
+{
+    width:24px;
+    height:24px;
+    background:url('../assets/keyboard-arrow-right.svg') no-repeat center;
+}
+
+button.increase:hover,button.increase:focus
+{
+    background:url('../assets/keyboard-arrow-right-active.svg') no-repeat center;
+}
+
+button.decrease,button.decrease:hover:disabled,button.decrease:focus:disabled
+{
+    width:24px;
+    height:24px;
+    background:url('../assets/keyboard-arrow-left.svg') no-repeat center;
+}
+
+button.decrease:hover,button.decrease:focus
+{
+    background:url('../assets/keyboard-arrow-left-active.svg') no-repeat center;
+}
+
+select
+{
+    margin:0;
+    padding:0;
+}
+
+.select-css { 
+flex-grow:0;
+cursor: pointer;
+color: #5E7793; 
+line-height: 1.3;  
+font-size:14px; 
+margin: 0 20px 0 0; 
+border: 0;
+padding:0 20px 0 20px;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ appearance: none;
+ background-color: transparent; 
+ background: url('../assets/dropdown-arrow-down.svg') no-repeat 100% / 10px;
+} 
+
+ .select-css::-ms-expand { display: none; } 
+ .select-css:hover {  } 
+ .select-css:focus { 
+ outline: none; 
+} 
+
+.select-css:active
+{
+     background: url('../assets/dropdown-arrow-up.svg') no-repeat 100% / 10px;
+}
+ .select-css option { font-weight:normal;} 
+ 
+ 
+ .TimeSelect .select-css { 
+  background: none;
+ } 
+
+
+.TimeSelect .select-css:active
+ {
+    background: none;
+ }
+ 
+ 
+ 

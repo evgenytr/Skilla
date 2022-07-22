@@ -1,2 +1,0 @@
-# Skilla
- Skilla test
