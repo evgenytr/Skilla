@@ -13,7 +13,7 @@ function CallRow(props) {
     
   return (
     <tr className="CallRow">
-      <td className={callClasses}><img src={"/assets/"+callIcon+".svg"}/></td>
+      <td className={callClasses}><img src={"assets/"+callIcon+".svg"}/></td>
       <td>{dateToTime(props.callData.date)}</td>
       <td><img src={props.callData.person_avatar} width="32" height="32"/></td>
       <td>{formatPhone(props.callData.partner_data.phone)}<br/><span className="partner-name">{props.callData.partner_data.name}</span></td>
