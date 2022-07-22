@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Skilla/static/js/main.67ccfd95.js",
+    "main.js": "/Skilla/static/js/main.b94576c1.js",
     "index.html": "/Skilla/index.html",
-    "main.67ccfd95.js.map": "/Skilla/static/js/main.67ccfd95.js.map"
+    "main.b94576c1.js.map": "/Skilla/static/js/main.b94576c1.js.map"
   },
   "entrypoints": [
-    "static/js/main.67ccfd95.js"
+    "static/js/main.b94576c1.js"
   ]
 }
