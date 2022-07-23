@@ -23,7 +23,7 @@ function CallsGrid(props) {
           if(getFormattedDate(yesterdayDate)==day) dayName="вчера";
         
           //show today subhead only if sorted by date ASC & length>1
-        if(dayName!="сегодня" || (props.sorts.param=="date" && props.sorts.order=="ASC" && totalDaysCounter>0))
+        if(props.sorts.param=="date" && (dayName!="сегодня" || (props.sorts.order=="ASC" && totalDaysCounter>0)))
         callRows.push(<CallSubheadRow total={currCalls.length} date={dayName} key={day}/>);
         
         callRows = callRows.concat(currCalls.map((obj)=><CallRow callData={obj} key={obj.id} play={props.playRecord}/>));
