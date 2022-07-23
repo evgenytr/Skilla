@@ -251,7 +251,10 @@ function App() {
           break;  
       case 3: //year
           tempDate.setYear(endDate.getFullYear()-1);
-          break;          
+          break;
+      default:    
+          tempDate.setDate(endDate.getDate()-3);
+          break;      
       }
       setStartDate(tempDate);
       
